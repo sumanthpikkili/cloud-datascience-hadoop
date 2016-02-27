@@ -22,5 +22,7 @@ Hadoop MapReduce to compare the yearly, monthly and seasonly comparisons of aver
       plot(result$Year,result$avgtemp,col=result$out_cluster.cluster)
 
      Clustering based on the average of temperature
-      Data_cluster<-read.csv(“/Users/sumanthpikkili/Desktop/Averages.csv“) out_cluster<-kmeans(Data_cluster$avgtemp,2)             result<-data.frame(cbind(Data_cluster,out_cluster$cluster)) 
+      Data_cluster<-read.csv(“/Users/sumanthpikkili/Desktop/Averages.csv“)
+      out_cluster<-kmeans(Data_cluster$avgtemp,2)            
+      result<-data.frame(cbind(Data_cluster,out_cluster$cluster)) 
       plot(result$Year,result$avgtemp,col=result$out_cluster.cluster)
