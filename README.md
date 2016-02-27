@@ -14,7 +14,8 @@ Hadoop MapReduce to compare the yearly, monthly and seasonly comparisons of aver
     Seasonly Comparison of Average temperature, wind and precipitation (Time taken = 6745 milliseconds)
     
 ##MACHINE LEARNING:
-    R language was used for K-means clustering. The software package used was R Studio. The following commands were run in R     Studio to get the clusters (Cluster Size here = 2): 
+    R language was used for K-means clustering. The software package used was R Studio. 
+    The following commands were run in R Studio to get the clusters (Cluster Size here = 2): 
      Clustering based on the averages of temperature, wind and precipitation
       Data_cluster<-read.csv(“/Users/sumanthpikkili/Desktop/Averages.csv“)
       out_cluster<-kmeans(Data_cluster[,2:4],2)              
